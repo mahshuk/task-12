@@ -235,6 +235,9 @@ const Status = styled.span`
   @media all and (max-width: 1080px){
     padding:4px;
   };
+  @media all and (max-width: 480px){
+    padding:9px;
+  };
 `;
 const Item = styled.a`
 @media all and (max-width: 1080px){

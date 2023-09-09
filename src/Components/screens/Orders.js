@@ -175,7 +175,9 @@ const Indonesian = styled.div`
     @media all and (max-width: 1080px){
         width:100%;
     };
-    
+    @media all and (max-width: 480px){
+        width:180px;
+    };
 `;
 const Box = styled.div`
     display: flex;
@@ -187,6 +189,7 @@ const Box = styled.div`
 const Imager = styled.div`
     width: 200px;
     margin-right: 20px;
+    
 `;
 const Image = styled.img`
     display: block;
@@ -195,15 +198,24 @@ const Image = styled.img`
     @media all and (max-width: 640px){
         width: 60%;
     };
+    @media all and (max-width: 480px){
+        width: 40%;
+    };
 `;
 const Contents = styled.div`
     
 `;
 const Sub = styled.h3`
     text-align: left;
+    @media all and (max-width: 480px){
+        font-size:15px;
+    };
 `;
 const Para = styled.p`
     text-align: left;
+    @media all and (max-width: 480px){
+        font-size:15px;
+    };
 `;
 const Select = styled.h3`
 text-align: left;
@@ -238,6 +250,9 @@ const Pricebox = styled.div`
     @media all and (max-width: 640px){
         display: inline-block;
         padding: 0px 18px;
+    };
+    @media all and (max-width: 480px){
+        padding: 0px 37px;
     };
 `;
 const Price = styled.h4`
@@ -279,6 +294,9 @@ const Volumebox = styled.div`
     @media all and (max-width: 640px){
         display: inline-block;
         padding: 0px 18px;
+    };
+    @media all and (max-width: 480px){
+        padding: 0px 22px;
     };
 `;
 const Add = styled.a`

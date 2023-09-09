@@ -57,7 +57,9 @@ border-bottom:2px solid #EEECEB;
 @media all and (max-width: 640px){
     width:330px;
 };
-
+@media all and (max-width: 480px){
+    width:200px;
+};
 `;
 const Top = styled.div`
 display: flex;
@@ -145,6 +147,12 @@ border: 1px solid #EEECEB;
     margin: -4px 22px 23px -142px;
     height: 0px;
 };
+@media all and (max-width: 480px){
+    width:40px;
+};
+@media all and (max-width: 360px){
+    width:1px;
+};
 `;
 const Span = styled.span`
 
@@ -169,7 +177,13 @@ margin: 15px 57px 0px -37px;
     display: block;
     margin: 10px 39px 0px -41px;
 };
-
+@media all and (max-width: 480px){
+    display:none;
+};
+@media all and (max-width: 360px){
+    display: block;
+    margin: 10px 29px 0px -45px;
+};
 };
 `
 const Item3 = styled.div`
@@ -192,7 +206,14 @@ margin-right: 90px;
     width: 15px;
     margin: 0px -5px 11px -16px;
 };
-`
+@media all and (max-width: 480px){
+    margin: 0px -5px 23px -51px;
+};
+@media all and (max-width: 360px){
+    margin: 0px -5px 23px -90px;
+}
+};
+`;
 const Item4 = styled.div`
 display: flex;
 `
@@ -282,14 +303,23 @@ background-color: #EEECEB;
     margin: -19px 1px 9px -100px;
     width: 130px;
 };
-`
+@media all and (max-width: 480px){
+    width:42px;
+};
+@media all and (max-width: 480px){
+    margin: -25px 0px 0px -143px;
+};
+@media all and (max-width: 360px){
+    margin: -25px 0px 0px -185px;
+};
+`;
 const Plus = styled.span`
 width: 12%;
 @media all and (max-width: 1080px){
     width:7%;
 };
 
-`
+`;
 const PlusImage = styled.img`
 margin:5px 0px 0px 40px;
 width:100%;
@@ -316,6 +346,9 @@ margin-left:50px;
     margin-left: 27px;
     display: block;
 };
+@media all and (max-width: 480px){
+    display:none;
+};
 `;
 const Item6 = styled.div`
 margin-left:70px;
@@ -325,4 +358,4 @@ margin-left:70px;
 @media all and (max-width: 980px){
     margin-left:30px;
 };
-`
+`;

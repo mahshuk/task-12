@@ -202,6 +202,9 @@ const Container = styled.section`
     @media all and (max-width: 640px){
       display:flex;
   };
+  @media all and (max-width: 480px){
+    display:inline;
+  };
 `;
 const Div = styled.section`
     width:60%;
