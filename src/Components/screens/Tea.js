@@ -27,6 +27,13 @@ const Heading = styled.h1`
   @media all and (max-width: 1080px){
     font-size:35px;
     margin: 90px 100px 0px -150px;
-  }
+  };
+  @media all and (max-width: 768px){
+    font-size:30px;
+  };
+  @media all and (max-width: 640px){
+    font-size: 25px;
+    margin: 111px 0px 0px -100px;
+  };
 `;
 

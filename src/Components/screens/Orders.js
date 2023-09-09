@@ -150,7 +150,10 @@ const Container = styled.section`
 const MainBox = styled.div`
     display: flex;
     justify-content: space-between;
-    
+    @media all and (max-width: 640px){
+        display:inline;
+    };
+
 `;
 const Left = styled.div`
     width: 49%;
@@ -161,6 +164,9 @@ const Right = styled.div`
 const Heading = styled.h2`
     font-size:20px;
     text-align: left;
+    @media all and (max-width: 640px){
+        margin-top:130px;
+    };
 `;
 const Indonesian = styled.div`
     background-color: #F6F5F4;
@@ -174,6 +180,9 @@ const Indonesian = styled.div`
 const Box = styled.div`
     display: flex;
     align-items: center; 
+    @media all and (max-width: 640px){
+        display:inline;
+    };
 `;
 const Imager = styled.div`
     width: 200px;
@@ -183,6 +192,9 @@ const Image = styled.img`
     display: block;
     width: 100%;
     padding: 10px;
+    @media all and (max-width: 640px){
+        width: 60%;
+    };
 `;
 const Contents = styled.div`
     
@@ -202,6 +214,9 @@ const Roasting = styled.div`
     @media all and (max-width: 768px){
         height:50px;
     };
+    @media all and (max-width: 640px){
+        display: inline;
+    };
 `;
 const Pricebox = styled.div`
     background-color: #EEECEB;
@@ -220,6 +235,10 @@ const Pricebox = styled.div`
     @media all and (max-width: 768px){
         padding: 0px 13px;
     };
+    @media all and (max-width: 640px){
+        display: inline-block;
+        padding: 0px 18px;
+    };
 `;
 const Price = styled.h4`
     font-size:14px;
@@ -236,12 +255,15 @@ const Volume = styled.div`
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-   
+    @media all and (max-width: 640px){
+        display: inline;
+    };
 `;
 const Roast = styled.h4`
 `;
 const Pack = styled.h4`
     text-align:left;
+    
 `;
 const Volumebox = styled.div`
     background-color: #EEECEB;
@@ -254,6 +276,10 @@ const Volumebox = styled.div`
     @media all and (max-width: 1280px){
     padding: 2px 22px;
     };  
+    @media all and (max-width: 640px){
+        display: inline-block;
+        padding: 0px 18px;
+    };
 `;
 const Add = styled.a`
     color: #fff;

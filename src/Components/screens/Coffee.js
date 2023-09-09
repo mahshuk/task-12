@@ -193,13 +193,15 @@ function Coffee() {
 }
 
 
-
 const Container = styled.section`
     display:flex;
     justify-content: space-around;
     @media all and (max-width: 1080px){
         display: inline;
     }
+    @media all and (max-width: 640px){
+      display:flex;
+  };
 `;
 const Div = styled.section`
     width:60%;

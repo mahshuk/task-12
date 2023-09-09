@@ -58,6 +58,9 @@ const Coffe = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media all and (max-width: 640px){
+    display:inline;
+  };
 `;
 const Item = styled.div`
   background: #f6f5f4;
@@ -75,7 +78,7 @@ const Item = styled.div`
   @media all and (max-width: 768px){
     width:77px;
     height:30px;
-  }
+  };
 `;
 const Box = styled.span`
   width: 30px;

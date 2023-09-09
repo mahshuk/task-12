@@ -15,7 +15,7 @@ function Bills({ orders, setOrders }) {
   };
 
   const calculateDiscountAmount = () => {
-    const discountRate = 0.1; // Assuming a 10% discount rate
+    const discountRate = 0.1; 
     const subtotal = calculateSubtotal();
     return subtotal * discountRate;
   };
@@ -182,6 +182,12 @@ function Bills({ orders, setOrders }) {
 const MainContainer = styled.section`
   width: 25%;
   background-color: #F6F5F4;
+  @media all and (max-width: 640px){
+    width: 162px;
+    background-color: #F6F5F4;
+    margin: 9px 70px 0px -21px;
+  };
+ 
 `;
 const Billing = styled.div`
   display: flex;

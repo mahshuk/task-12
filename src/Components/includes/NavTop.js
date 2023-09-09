@@ -53,8 +53,12 @@ height:60px;
 border-bottom:2px solid #EEECEB;
 @media all and (max-width: 1080px){
     height:30px
-}
-`
+};
+@media all and (max-width: 640px){
+    width:330px;
+};
+
+`;
 const Top = styled.div`
 display: flex;
 align-items: center;
@@ -88,7 +92,10 @@ color:grey;
     margin: -5px 0px 0px -12px;
     font-size:12px;
 };
-`
+@media all and (max-width: 640px){
+    display:none;
+};
+`;
 const Title = styled.h3`
 margin: 0;
 font-size:22px;
@@ -103,7 +110,7 @@ width:190px;
 @media all and (max-width: 768px){
     display:none;
 };
-`
+`;
 const Item2 = styled.div`
 
 
@@ -133,8 +140,12 @@ border: 1px solid #EEECEB;
 @media all and (max-width: 768px){
     width:115px;
 };
-
-`
+@media all and (max-width: 640px){
+    width: 115px;
+    margin: -4px 22px 23px -142px;
+    height: 0px;
+};
+`;
 const Span = styled.span`
 
 `
@@ -153,6 +164,12 @@ margin: 15px 57px 0px -37px;
     display:block;
     margin: 12px 25px -17px -20px;
 };
+@media all and (max-width: 640px){
+    width: 12px;
+    display: block;
+    margin: 10px 39px 0px -41px;
+};
+
 };
 `
 const Item3 = styled.div`
@@ -170,6 +187,10 @@ margin-right: 90px;
 };
 @media all and (max-width: 980px){
     width: 15px;
+};
+@media all and (max-width: 640px){
+    width: 15px;
+    margin: 0px -5px 11px -16px;
 };
 `
 const Item4 = styled.div`
@@ -231,7 +252,7 @@ font-size:13px;
     margin: -15px 0px 0px -32px;
 };
 @media all and (max-width: 980px){
-    margin: -10px 0px 12px -70px
+    margin: -10px 0px 12px -70px;
 };
 @media all and (max-width: 768px){
     display:none;
@@ -256,7 +277,10 @@ background-color: #EEECEB;
 @media all and (max-width: 768px){
     width: 42px;
     margin: -5px 0px 0px -108px;
-
+};
+@media all and (max-width: 640px){
+    margin: -19px 1px 9px -100px;
+    width: 130px;
 };
 `
 const Plus = styled.span`
@@ -287,7 +311,12 @@ margin-left:50px;
 @media all and (max-width: 980px){
     display:none;
 };
-`
+@media all and (max-width: 640px){
+    width: 180px;
+    margin-left: 27px;
+    display: block;
+};
+`;
 const Item6 = styled.div`
 margin-left:70px;
 @media all and (max-width: 1080px){
