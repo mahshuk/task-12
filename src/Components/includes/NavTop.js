@@ -1,6 +1,5 @@
 import React from 'react'
 import{ styled }from 'styled-components';
-import { NavLink } from 'react-router-dom';
 
 export default function NavTop() {
   return ( 
@@ -52,7 +51,6 @@ width:90%;
 padding:2%;
 height:60px;
 border-bottom:2px solid #EEECEB;
-
 `
 const Top = styled.div`
 display: flex;
@@ -61,16 +59,28 @@ align-items: center;
 `
 const Item = styled.div`
 margin-right:150px;
+@media all and (max-width: 1380px){
+    width:100px;
+ };
+ @media all and (max-width: 1280px){
+    width:50px
+};
 `
 const Heading = styled.h5`
-margin: 0px 0px 5px 0px;
+margin: 0px -90px 5px 0px;
 font-size:12px;
 color:grey;
+@media all and (max-width: 1280px){
+    font-size:10px;
+};
 `
 const Title = styled.h3`
 margin: 0;
 font-size:22px;
 width:190px;
+@media all and (max-width: 1280px){
+    font-size:15px;
+};
 `
 const Item2 = styled.div`
 
@@ -89,13 +99,21 @@ border: 1px solid #EEECEB;
 &::placeholder {
     color: #918c8c;
 }
+@media all and (max-width: 1280px){
+    font-size:12px;
+    width:180px;
+};
 `
 const Span = styled.span`
 
 `
 const Search = styled.img`
 width: 50%;
-margin: 15px 57px 0px -37px
+margin: 15px 57px 0px -37px;
+@media all and (max-width: 1280px){
+    margin: 0px 40px -17px -30px;
+    width: 16px;
+};
 `
 const Item3 = styled.div`
 
@@ -118,19 +136,32 @@ const Man = styled.img`
 display:block;
 border-radius:50%;
 width:90%;
+@media all and (max-width: 1280px){
+    width:70%;
+};
 `
 const Bio = styled.div`
 width:50px;
+@media all and (max-width: 1280px){
+    width:35px;
+};
 `
 const Position = styled.h5`
 margin:10px 0 15px ;
 font-size:10px;
 color:#918c8c;
+@media all and (max-width: 1280px){
+    margin: 10px 0px 17px -15px;
+};
 `
 const Name = styled.h4`
 margin:0;
 width:90px;
 font-size:13px;
+@media all and (max-width: 1280px){
+    width:75px;
+    margin:-15px;
+};
 `
 const AddMenu = styled.div`
 display: flex;

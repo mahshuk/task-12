@@ -181,19 +181,22 @@ function Bills({ orders, setOrders }) {
 
 const MainContainer = styled.section`
   width: 25%;
+  background-color: #F6F5F4;
 `;
-
-
 const Billing = styled.div`
   display: flex;
   justify-content: space-between;
-`;
+;`;
 const Heading = styled.h2`
   font-size: 20px;
   margin-left: 50px;
 `;
 const SubHeading = styled.h2`
-  font-style: 20px;
+  font-size: 25px;
+  @media all and (max-width: 1380px){
+    font-size:20px;
+    margin:15px;
+  }
 `;
 const OrderStatus = styled.div`
   display: flex;
@@ -206,6 +209,9 @@ const Status = styled.span`
   background-color: aliceblue;
   display: inline-block;
   cursor: pointer;
+  @media all and (max-width: 1280px){
+    padding:6px;
+  };
 `;
 const Item = styled.a`
     `;
@@ -225,6 +231,7 @@ const Imager = styled.div`
 `;
 const Image = styled.img`
   width: 100%;
+  padding: 10px;
 `;
 const Contents = styled.div`
   display: flex;
@@ -246,6 +253,9 @@ const Accounts = styled.div`
   align-items: center;
   margin-left: 185px;
   margin-bottom: 10px;
+  @media all and (max-width: 1280px){
+    margin-left:150px;
+  };
 `;
 const Round = styled.button`
   display: flex;
@@ -256,9 +266,15 @@ const Round = styled.button`
   height: 30px;
   width: 30px;
   cursor: pointer;
+  @media all and (max-width: 1280px){
+   width:22px;
+   height:22px;
+  };
 `;
 const Cash = styled.img`
-
+@media all and (max-width: 1280px){
+  width:90%;
+ };
 `;
 
 const CashTag = styled.small``;
@@ -303,6 +319,7 @@ const PaymentTag = styled.div`
 const PaymentOption = styled.div`
   display: flex;
   justify-content: space-between;
+ 
 `;
 const PayTag = styled.div`
   background-color: #C9BEBE;
@@ -311,6 +328,9 @@ const PayTag = styled.div`
   border-radius: 50px;
   text-align: center;
   cursor: pointer;
+  @media all and (max-width: 1280px){
+    padding:12px 6px;
+  };
 `;
 const PayCash = styled.div`
   width: 66px;

@@ -179,6 +179,7 @@ const Imager = styled.div`
 const Image = styled.img`
     display: block;
     width: 100%;
+    padding: 10px;
 `;
 const Contents = styled.div`
     
@@ -202,11 +203,19 @@ const Pricebox = styled.div`
     padding: 6px 35px;
     border-radius: 50px;
     cursor:pointer;
-   
+    @media all and (max-width: 1380px){
+    width:16px;
+    };
+    @media all and (max-width: 1280px){
+        padding: 2px 22px;
+    };
 `;
 const Price = styled.h4`
     font-size:14px;
-    
+    @media all and (max-width: 1280px){
+    font-size:15px;
+    margin-left:-6px;
+    };
 `;
 const Volume = styled.div`
     display: flex;
@@ -224,7 +233,13 @@ const Volumebox = styled.div`
     padding: 6px 48px;
     border-radius: 50px;
     cursor:pointer;
-   
+    @media all and (max-width: 1380px){
+    width:16px;
+    };
+    @media all and (max-width: 1280px){
+    padding: 2px 22px;
+    };    
+
 `;
 const Add = styled.a`
     color: #fff;
