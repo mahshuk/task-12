@@ -1,89 +1,41 @@
-import React from 'react'
-import styled from 'styled-components'
+import Tea from "../../Assets/Tea-fill.svg"
+import Cake from "../../Assets/Cake.svg"
+import Bottle from "../../Assets/Bottle.svg"
+import Month from "../../Assets/noodles.svg"
 
-export default function Home() {
-  return (
-    <>
-    <TopContainer>
-        <Options>
-            <Images>
-                <Icons>
-                    <Image src={require("../../Assets/Tea-fill.svg").default} alt="image"/>
-                </Icons>
-                <Name>
-                    Coffee
-                </Name>
-            </Images>
-            <Images>
-                <Icons>
-                    <Image src={require("../../Assets/Tea-fill.svg").default} alt="image"/>
-                </Icons>
-                <Name>
-                    Tea
-                </Name>
-            </Images>
-            <Images>
-            <Icons>
-                <Image src={require("../../Assets/Cake.svg").default} alt="image"/>
-            </Icons>
-                <Name>
-                    Cakes
-                </Name>
-            </Images> 
-            <Images>
-                <Icons>
-                    <Image src={require("../../Assets/Bottle.svg").default} alt="image"/>
-                </Icons>
-                <Name>
-                    Bundles
-                </Name>
-            </Images>
-            <Images>
-                <Icons>
-                    <Image src={require("../../Assets/noodles.svg").default} alt="image"/>
-                </Icons>
-                <Name>
-                    Snacks
-                </Name>
-            </Images>
-        </Options>   
-    </TopContainer>    
-    </>
-  )
-}
-
-const TopContainer = styled.section`
-
-`
-const Options = styled.div`
-display:flex;
-
-`
-const Icons = styled.div`
-width:40px;
-height:40px;
-margin-left:10px;
-background-color: #c1bfbf;
-border-radius: 50%;
-display:flex;
-justify-content: center;
-align-items:center;
-`
-const Images = styled.div`
-display:flex;
-align-items:center;
-border: 1px solid #EEECEB;
-border-radius: 40px;
-width:130px;
-height:70px;
-background-color: #EEECEB;
-margin-top:20px;
-margin-left:20px;
-`
-const Image = styled.img`
-display:block;
-
-`
-const Name = styled.span`
-margin: 0 auto;
-`
+export  const home = [
+    {
+        id:1,
+        Icon: Tea,
+        dish:"Coffee",
+        path:"/coffee",
+    },
+    {
+        id:2,
+        Icon: Tea,
+        dish:"Tea",
+        path:"/tea-2",
+    
+    },
+    {
+        id:3,
+        Icon: Cake,
+        dish:"Cakes",
+        path:"/cakes",
+      
+    },
+    
+    {
+        id:4,
+        Icon: Bottle,
+        dish:"Bundles",
+        path:"/bundles",
+    },
+    {
+        id:5,
+        Icon: Month,
+        dish:"Snack",
+        path:"/snack",
+    },
+    
+  ];

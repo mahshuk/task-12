@@ -52,6 +52,7 @@ width:90%;
 padding:2%;
 height:60px;
 border-bottom:2px solid #EEECEB;
+
 `
 const Top = styled.div`
 display: flex;

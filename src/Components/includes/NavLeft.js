@@ -12,7 +12,7 @@ export default function NavLeft() {
        <NavContainer>
             <NavLogo src={require("../../Assets/Logo-T12.svg").default} alt="logo" />
             <NavList>
-                <Navlistli to="/"><NavImages src={require("../../Assets/Menu.svg").default} alt="image"/></Navlistli>
+                <Navlistli to="/" className={({isActive})=>(isActive ? "active" : "")}><NavImages src={require("../../Assets/Menu.svg").default} alt="image"  /></Navlistli>
                 <Navlistli to="tea"><NavImages src={require("../../Assets/tea.svg").default} alt="image"/></Navlistli>
                 <Navlistli to="wallet"><NavImages src={require("../../Assets/wallet.svg").default} alt="image"/></Navlistli>
                 <Navlistli to="graph"><NavImages src={require("../../Assets/Graph.svg").default} alt="image"/></Navlistli>
@@ -25,6 +25,7 @@ export default function NavLeft() {
 
 const NavContainer = styled.div `
 height:100vh;
+
 `;
 const NavLogo = styled.img`
 width:35px;
@@ -36,9 +37,14 @@ flex-direction:column;
 
 `;
 const Navlistli = styled(NavLink)`
+&.active{
+  border-right:4px solid #FF7B00;
+  padding:5px;
+}
 `;
 const NavImages = styled.img`
 width:25px;
 margin-top:30px;
+
 `;
 
