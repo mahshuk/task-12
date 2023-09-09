@@ -21,7 +21,11 @@ width: -webkit-fill-available;
 `;
 
 const Heading = styled.h1`
-  font-size: 48px;
-  color: #333;
-  margin-bottom: 20px;
+font-size: 48px;
+color: #333;
+margin-top: 115px;
+@media all and (max-width: 1080px){
+  font-size:35px;
+  margin: 90px 100px 0px -150px;
+}
 `;

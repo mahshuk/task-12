@@ -51,6 +51,9 @@ width:90%;
 padding:2%;
 height:60px;
 border-bottom:2px solid #EEECEB;
+@media all and (max-width: 1080px){
+    height:30px
+}
 `
 const Top = styled.div`
 display: flex;
@@ -65,6 +68,9 @@ margin-right:150px;
  @media all and (max-width: 1280px){
     width:50px
 };
+@media all and (max-width: 1080px){
+    width:40px;
+}
 `
 const Heading = styled.h5`
 margin: 0px -90px 5px 0px;
@@ -73,6 +79,15 @@ color:grey;
 @media all and (max-width: 1280px){
     font-size:10px;
 };
+@media all and (max-width: 1080px){
+    margin: -5px 0px 7px -21px;
+    width: 95px;
+};
+@media all and (max-width: 768px){
+    width:110px;
+    margin: -5px 0px 0px -12px;
+    font-size:12px;
+};
 `
 const Title = styled.h3`
 margin: 0;
@@ -80,6 +95,13 @@ font-size:22px;
 width:190px;
 @media all and (max-width: 1280px){
     font-size:15px;
+};
+@media all and (max-width: 1080px){
+    margin: -6px 0px 0px -20px;
+    font-size:14px;
+};
+@media all and (max-width: 768px){
+    display:none;
 };
 `
 const Item2 = styled.div`
@@ -103,6 +125,15 @@ border: 1px solid #EEECEB;
     font-size:12px;
     width:180px;
 };
+@media all and (max-width: 1080px){
+    width:75px;
+    height:0;
+    margin: 0px 0px 0px -75px;
+};
+@media all and (max-width: 768px){
+    width:115px;
+};
+
 `
 const Span = styled.span`
 
@@ -114,6 +145,15 @@ margin: 15px 57px 0px -37px;
     margin: 0px 40px -17px -30px;
     width: 16px;
 };
+@media all and (max-width: 1080px){
+    display:none;
+};
+@media all and (max-width: 768px){
+    width: 12px;
+    display:block;
+    margin: 12px 25px -17px -20px;
+};
+};
 `
 const Item3 = styled.div`
 
@@ -124,6 +164,13 @@ const Notify = styled.div`
 const Notification = styled.img`
 width:30%;
 margin-right: 90px;
+@media all and (max-width: 1080px){
+    width: 20px;
+    margin: 12px;
+};
+@media all and (max-width: 980px){
+    width: 15px;
+};
 `
 const Item4 = styled.div`
 display: flex;
@@ -139,12 +186,21 @@ width:90%;
 @media all and (max-width: 1280px){
     width:70%;
 };
+@media all and (max-width: 1080px){
+    width:50%;
+}
+@media all and (max-width: 980px){
+    display:none;
+};
 `
 const Bio = styled.div`
 width:50px;
 @media all and (max-width: 1280px){
     width:35px;
 };
+@media all and (max-width: 1080px){
+    width:20px;
+}
 `
 const Position = styled.h5`
 margin:10px 0 15px ;
@@ -152,6 +208,15 @@ font-size:10px;
 color:#918c8c;
 @media all and (max-width: 1280px){
     margin: 10px 0px 17px -15px;
+};
+@media all and (max-width: 1080px){
+    margin: 3px 0px 14px -30px
+};
+@media all and (max-width: 980px){
+    margin: 0px 0px 12px -70px
+};
+@media all and (max-width: 768px){
+    display:none;
 };
 `
 const Name = styled.h4`
@@ -162,6 +227,16 @@ font-size:13px;
     width:75px;
     margin:-15px;
 };
+@media all and (max-width: 1080px){
+    margin: -15px 0px 0px -32px;
+};
+@media all and (max-width: 980px){
+    margin: -10px 0px 12px -70px
+};
+@media all and (max-width: 768px){
+    display:none;
+};
+
 `
 const AddMenu = styled.div`
 display: flex;
@@ -171,22 +246,54 @@ border-radius: 30px;
 width:200px;
 height:50px;
 background-color: #EEECEB;
+@media all and (max-width: 1080px){
+    width: 135px;
+    height: 30px;
+};
+@media all and (max-width: 980px){
+    width: 42px;
+};
+@media all and (max-width: 768px){
+    width: 42px;
+    margin: -5px 0px 0px -108px;
 
+};
 `
 const Plus = styled.span`
 width: 12%;
+@media all and (max-width: 1080px){
+    width:7%;
+};
 
 `
 const PlusImage = styled.img`
 margin:5px 0px 0px 40px;
 width:100%;
+@media all and (max-width: 1080px){
+    width:90%;
+    margin:5px 0px 2px 15px;
+};
+@media all and (max-width: 980px){
+    width:12px;
+};
 `
 const Menu = styled.h5`
 width:150px;
 margin-left:50px;
-
+@media all and (max-width: 1080px){
+    margin-left:25px;
+    font-size:12px;
+};
+@media all and (max-width: 980px){
+    display:none;
+};
 `
 const Item6 = styled.div`
 margin-left:70px;
-
+@media all and (max-width: 1080px){
+    margin-left:30px;
+};
+@media all and (max-width: 980px){
+    margin-left:30px;
+};
 `

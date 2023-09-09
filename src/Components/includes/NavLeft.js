@@ -21,7 +21,6 @@ export default function NavLeft() {
 
 const NavContainer = styled.div `
 height:100vh;
-
 `;
 const NavLogo = styled.img`
 width:35px;
@@ -32,10 +31,17 @@ width:30px;
 @media all and (max-width: 1280px){
 width:20px;
 };
+@media all and (max-width: 1080px){
+  padding:15px;
+};
 `;
 const NavList = styled.ul`
 display:flex;
 flex-direction:column;
+@media all and (max-width: 1080px){
+   width:30px;
+   margin: 20px 0px 0px -30px;
+}
 `;
 const Navlistli = styled(NavLink)`
 &.active{

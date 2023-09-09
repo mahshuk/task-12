@@ -190,6 +190,13 @@ const Billing = styled.div`
 const Heading = styled.h2`
   font-size: 20px;
   margin-left: 50px;
+  @media all and (max-width: 1080px){
+    margin:13px;
+  };
+  @media all and (max-width: 768px){
+    font-size:14px;
+    margin-left:30px;
+  };
 `;
 const SubHeading = styled.h2`
   font-size: 25px;
@@ -197,6 +204,13 @@ const SubHeading = styled.h2`
     font-size:20px;
     margin:15px;
   }
+  @media all and (max-width: 1280px){
+    margin:15px;
+    font-size:18px;
+  };
+  @media all and (max-width: 768px){
+    font-size:14px;
+  };
 `;
 const OrderStatus = styled.div`
   display: flex;
@@ -212,13 +226,36 @@ const Status = styled.span`
   @media all and (max-width: 1280px){
     padding:6px;
   };
+  @media all and (max-width: 1080px){
+    padding:4px;
+  };
 `;
 const Item = styled.a`
-    `;
+@media all and (max-width: 1080px){
+  font-size:14px;
+};
+@media all and (max-width: 768px){
+  font-size:12px;
+};
+`;
 
-const Item1 = styled.a``;
+const Item1 = styled.a`
+@media all and (max-width: 1080px){
+  font-size:14px;
+};
+@media all and (max-width: 768px){
+  font-size:12px;
+};
+`;
 
-const Item2 = styled.a``;
+const Item2 = styled.a`
+@media all and (max-width: 1080px){
+  font-size:14px;
+};
+@media all and (max-width: 768px){
+  font-size:12px;
+};
+`;
 const Sections = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -255,6 +292,12 @@ const Accounts = styled.div`
   margin-bottom: 10px;
   @media all and (max-width: 1280px){
     margin-left:150px;
+  };
+  @media all and (max-width: 980px){
+    margin-left:100px;
+  };
+  @media all and (max-width: 768px){
+    margin-left:80px;
   };
 `;
 const Round = styled.button`
@@ -331,15 +374,43 @@ const PayTag = styled.div`
   @media all and (max-width: 1280px){
     padding:12px 6px;
   };
+  @media all and (max-width: 1080px){
+    padding:3px;
+  };
+   @media all and (max-width: 980px){
+    width:40px;
+    padding:7px;
+  };
 `;
 const PayCash = styled.div`
   width: 66px;
+  @media all and (max-width: 1080px){
+    font-size:14px;
+  };
+  @media all and (max-width: 980px){
+    font-size:10px;
+    margin-left:-9px;
+  };
 `;
 const PayDebit = styled.div`
   width: 66px;
+  @media all and (max-width: 1080px){
+    font-size:14px;
+  };
+  @media all and (max-width: 980px){
+    font-size:10px;
+    margin-left:-9px;
+  };
 `;
 const PayEWallet = styled.div`
   width: 66px;
+  @media all and (max-width: 1080px){
+    font-size:14px;
+  };
+  @media all and (max-width: 980px){
+    font-size:10px;
+    margin-left:-9px;
+  };
 `;
 const Conform = styled.div`
   display: inline-block;

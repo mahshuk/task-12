@@ -145,12 +145,12 @@ function Orders({ beanItems, orders, setOrders, setBeanItems,items, selectedCate
 }
 
 const Container = styled.section`
-
-    width: 100%;
+    width: 100%; 
 `;
 const MainBox = styled.div`
     display: flex;
     justify-content: space-between;
+    
 `;
 const Left = styled.div`
     width: 49%;
@@ -166,11 +166,14 @@ const Indonesian = styled.div`
     background-color: #F6F5F4;
     width: 100%;
     border-radius:14px;
+    @media all and (max-width: 1080px){
+        width:100%;
+    };
     
 `;
 const Box = styled.div`
     display: flex;
-    align-items: center;
+    align-items: center; 
 `;
 const Imager = styled.div`
     width: 200px;
@@ -196,7 +199,9 @@ text-align: left;
 const Roasting = styled.div`
     display: flex;
     justify-content: space-between;
-   
+    @media all and (max-width: 768px){
+        height:50px;
+    };
 `;
 const Pricebox = styled.div`
     background-color: #EEECEB;
@@ -209,12 +214,22 @@ const Pricebox = styled.div`
     @media all and (max-width: 1280px){
         padding: 2px 22px;
     };
+    @media all and (max-width: 980px){
+        padding: 0px 18px;
+    };
+    @media all and (max-width: 768px){
+        padding: 0px 13px;
+    };
 `;
 const Price = styled.h4`
     font-size:14px;
     @media all and (max-width: 1280px){
     font-size:15px;
     margin-left:-6px;
+    };
+    @media all and (max-width: 768px){
+        font-size:12px;
+        margin-left:-4px;
     };
 `;
 const Volume = styled.div`
@@ -238,8 +253,7 @@ const Volumebox = styled.div`
     };
     @media all and (max-width: 1280px){
     padding: 2px 22px;
-    };    
-
+    };  
 `;
 const Add = styled.a`
     color: #fff;
